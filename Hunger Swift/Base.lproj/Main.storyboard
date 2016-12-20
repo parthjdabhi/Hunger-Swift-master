@@ -677,7 +677,7 @@
         <!--Feeling View Controller-->
         <scene sceneID="Mbb-Pn-XYp">
             <objects>
-                <viewController storyboardIdentifier="FeelingViewController" id="DZT-bd-Mu3" customClass="FeelingViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeelingViewController" id="DZT-bd-Mu3" customClass="FeelingViewController" customModule="Hunger_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uxJ-t6-G5s"/>
                         <viewControllerLayoutGuide type="bottom" id="DN7-NZ-RSA"/>
@@ -919,7 +919,7 @@
         <!--Score View Controller-->
         <scene sceneID="dJR-aV-LC8">
             <objects>
-                <viewController storyboardIdentifier="ScoreViewController" id="Dhu-Nh-I2N" customClass="ScoreViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScoreViewController" id="Dhu-Nh-I2N" customClass="ScoreViewController" customModule="Hunger_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sNA-Uh-0ab"/>
                         <viewControllerLayoutGuide type="bottom" id="xYc-kK-xy3"/>
