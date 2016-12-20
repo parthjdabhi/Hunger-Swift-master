@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lt2-ZC-3RP">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lt2-ZC-3RP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -703,7 +703,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_tabbtn:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="a7n-pJ-eGx"/>
                                             <action selector="dateButton:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="YqI-hf-rvb"/>
                                         </connections>
                                     </button>
@@ -715,7 +714,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_tabbtn:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="rFz-dj-HYS"/>
                                             <action selector="doingButton:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="8J8-jb-p4m"/>
                                         </connections>
                                     </button>
@@ -727,7 +725,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_tabbtn:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="dO5-Z4-4xx"/>
                                             <action selector="photoButton:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="Ivx-hq-E6O"/>
                                         </connections>
                                     </button>
@@ -738,9 +735,6 @@
                                         <state key="normal" title="Feeling">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="clicked_tabbtn:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="KmU-gK-qmM"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtL-As-Yeo">
                                         <rect key="frame" x="277" y="593" width="60" height="30"/>
@@ -749,9 +743,6 @@
                                         <state key="normal" title="Score">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="clicked_tabbtn:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="pcr-fb-Rpt"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hungry" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttm-fw-DWY">
                                         <rect key="frame" x="67" y="151" width="82" height="27"/>
@@ -768,7 +759,6 @@
                                     <slider opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="9VM-lq-IHd">
                                         <rect key="frame" x="155" y="237" width="184" height="31"/>
                                         <connections>
-                                            <action selector="change_value:" destination="DZT-bd-Mu3" eventType="valueChanged" id="zNM-qs-pgX"/>
                                             <action selector="thirstySlider:" destination="DZT-bd-Mu3" eventType="valueChanged" id="K0J-1v-M6r"/>
                                         </connections>
                                     </slider>
@@ -788,7 +778,6 @@
                                         <rect key="frame" x="155" y="326" width="184" height="31"/>
                                         <connections>
                                             <action selector="boredSlider:" destination="DZT-bd-Mu3" eventType="valueChanged" id="gl6-P9-ktW"/>
-                                            <action selector="change_value:" destination="DZT-bd-Mu3" eventType="valueChanged" id="slV-MZ-WvK"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bored" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUQ-m4-VLc">
@@ -806,7 +795,6 @@
                                     <slider opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="pHe-DW-v3s">
                                         <rect key="frame" x="155" y="409" width="184" height="31"/>
                                         <connections>
-                                            <action selector="change_value:" destination="DZT-bd-Mu3" eventType="valueChanged" id="BAK-PC-7Xc"/>
                                             <action selector="unhappySlider:" destination="DZT-bd-Mu3" eventType="valueChanged" id="DkR-3b-s7h"/>
                                         </connections>
                                     </slider>
@@ -823,14 +811,12 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_nextbtn:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="FMq-Jt-pjs"/>
                                             <action selector="nextButton:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="whH-il-HEB"/>
                                         </connections>
                                     </button>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="lJa-AI-8v1">
                                         <rect key="frame" x="155" y="151" width="184" height="31"/>
                                         <connections>
-                                            <action selector="change_value:" destination="DZT-bd-Mu3" eventType="valueChanged" id="79Z-Tf-vdD"/>
                                             <action selector="hungrySlider:" destination="DZT-bd-Mu3" eventType="valueChanged" id="bGT-hC-5cD"/>
                                         </connections>
                                     </slider>
@@ -921,20 +907,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="boredLabel" destination="Ezg-FW-fsD" id="sT9-se-Sn1"/>
-                        <outlet property="boredScore" destination="Ezg-FW-fsD" id="hdh-La-MJJ"/>
-                        <outlet property="boredSilder" destination="UYm-iB-NOT" id="lw0-Nb-UJq"/>
-                        <outlet property="dateButton" destination="0w9-ix-3LF" id="i0P-Q6-p5i"/>
-                        <outlet property="doingButton" destination="jYT-xM-CyN" id="awK-fB-3yh"/>
                         <outlet property="hungryLabel" destination="Q5O-oW-Qje" id="e2N-0h-WD4"/>
-                        <outlet property="hungryScore" destination="Q5O-oW-Qje" id="YGM-Hp-LJN"/>
-                        <outlet property="hungrySilder" destination="lJa-AI-8v1" id="oUO-X9-Rhf"/>
-                        <outlet property="photoButton" destination="4UI-8W-DhF" id="fPx-nB-Izv"/>
                         <outlet property="thirstyLabel" destination="xYl-Ns-aoV" id="jvd-d9-X0C"/>
-                        <outlet property="thirstySilder" destination="9VM-lq-IHd" id="wOO-g3-4CR"/>
-                        <outlet property="thirtyScore" destination="xYl-Ns-aoV" id="hZs-1B-Kfj"/>
                         <outlet property="unhappyLabel" destination="x0X-g5-JB0" id="8aC-sE-Zje"/>
-                        <outlet property="unhappyScore" destination="x0X-g5-JB0" id="FpE-MX-IOf"/>
-                        <outlet property="unhappySilder" destination="pHe-DW-v3s" id="nT1-PR-CW2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHq-bV-AaU" sceneMemberID="firstResponder"/>
@@ -964,7 +939,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_tabbtn:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="8Hd-16-xOW"/>
                                             <action selector="dateButton:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="MW8-NY-rhz"/>
                                         </connections>
                                     </button>
@@ -976,7 +950,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_tabbtn:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="iGk-a7-Pu8"/>
                                             <action selector="doingButton:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="6CJ-tj-Ode"/>
                                         </connections>
                                     </button>
@@ -988,7 +961,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_tabbtn:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="xji-56-7sD"/>
                                             <action selector="photoButton:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="ihN-WD-dTW"/>
                                         </connections>
                                     </button>
@@ -1000,7 +972,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_tabbtn:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="HRi-mO-cTM"/>
                                             <action selector="feelingButton:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="Ogm-d4-ntg"/>
                                         </connections>
                                     </button>
@@ -1011,9 +982,6 @@
                                         <state key="normal" title="Score">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="clicked_tabbtn:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="xAO-0Z-k5M"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZp-fT-trx">
                                         <rect key="frame" x="16" y="61" width="344" height="55"/>
@@ -1055,7 +1023,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_goingeat:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="Td5-mi-4xv"/>
                                             <action selector="noEating:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="Cur-1L-oQg"/>
                                         </connections>
                                     </button>
@@ -1066,7 +1033,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_goingeat:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="icu-dP-45E"/>
                                             <action selector="yesEating:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="F6w-PE-Dbh"/>
                                         </connections>
                                     </button>
@@ -1079,13 +1045,8 @@
                     <navigationItem key="navigationItem" id="aO6-DU-WgC"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="dateButton" destination="PMu-sY-slb" id="KwC-s4-sGv"/>
-                        <outlet property="doingButton" destination="uB9-Va-29c" id="kM8-Rr-lR8"/>
-                        <outlet property="feelingButton" destination="xHf-SQ-0gd" id="Fw9-d1-HQU"/>
-                        <outlet property="photoButton" destination="nUM-SU-Ed8" id="rYQ-Zu-q0u"/>
                         <outlet property="tempationScore" destination="bim-ab-bAD" id="VYi-kB-6Ol"/>
                         <outlet property="waitLabel" destination="cBB-7m-w9X" id="nGr-2G-kGl"/>
-                        <outlet property="waitingSecond" destination="cBB-7m-w9X" id="65x-DO-9lx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGd-h3-uQG" sceneMemberID="firstResponder"/>
@@ -1314,7 +1275,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="312" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ffz-gZ-1kn" id="vNh-l5-Mb3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="312" height="59.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="312" height="59"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcW-K6-Fon">

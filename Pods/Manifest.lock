@@ -1,0 +1,12 @@
+PODS:
+  - AERecord (3.0.0)
+
+DEPENDENCIES:
+  - AERecord (~> 3.0)
+
+SPEC CHECKSUMS:
+  AERecord: eb32ea8474dfb46a7df5f7a08bfbd8853f713cfd
+
+PODFILE CHECKSUM: b9e2af5ebed5e36a07365cc5ba1e52528954b2ba
+
+COCOAPODS: 1.0.1

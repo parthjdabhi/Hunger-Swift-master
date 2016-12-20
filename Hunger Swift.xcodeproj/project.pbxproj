@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0124C85A7945F515ED813C /* Pods_Hunger_SwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2962A836284C8D068A9EA265 /* Pods_Hunger_SwiftTests.framework */; };
+		5EB67C721E095F5B00B423AB /* Diary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB67C701E095F5B00B423AB /* Diary+CoreDataProperties.swift */; };
+		5EB67C731E095F5B00B423AB /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB67C711E095F5B00B423AB /* Diary.swift */; };
+		6C67BE444943A14BCC24480A /* Pods_Hunger_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D863A1FD8A0134BC3C27040 /* Pods_Hunger_Swift.framework */; };
 		DA01B1A61DA4AADA00326C6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA01B1A51DA4AADA00326C6B /* AppDelegate.swift */; };
 		DA01B1A81DA4AADA00326C6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA01B1A71DA4AADA00326C6B /* ViewController.swift */; };
 		DA01B1AB1DA4AADA00326C6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA01B1A91DA4AADA00326C6B /* Main.storyboard */; };
@@ -29,6 +33,7 @@
 		DA3B25F71DF54602007ABBC3 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B25F61DF54602007ABBC3 /* ScoreViewController.swift */; };
 		DA3B25F91DF5461B007ABBC3 /* DiaryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B25F81DF5461B007ABBC3 /* DiaryContentViewController.swift */; };
 		DA3B25FB1DF54632007ABBC3 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B25FA1DF54632007ABBC3 /* DiaryViewController.swift */; };
+		DA82D9600570CF6FFF958F57 /* Pods_Hunger_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54D88E173A6C428781B1B33 /* Pods_Hunger_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2962A836284C8D068A9EA265 /* Pods_Hunger_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hunger_SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D863A1FD8A0134BC3C27040 /* Pods_Hunger_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hunger_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59091E1C9960A3CD14F6EB54 /* Pods-Hunger SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hunger SwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hunger SwiftUITests/Pods-Hunger SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5EB67C681E09435800B423AB /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Hunger_Swift-dwytgepmagsimievrojxrfxtwfnj/Build/Products/Debug-iphonesimulator/SQLite.swift/SQLite.framework"; sourceTree = "<group>"; };
+		5EB67C6A1E094FD500B423AB /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		5EB67C6C1E094FE000B423AB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		5EB67C701E095F5B00B423AB /* Diary+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Diary+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5EB67C711E095F5B00B423AB /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
+		7625CE4006AC248389AB05FE /* Pods-Hunger SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hunger SwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hunger SwiftUITests/Pods-Hunger SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8D6EB671EF6D856011273F9A /* Pods-Hunger Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hunger Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hunger Swift/Pods-Hunger Swift.release.xcconfig"; sourceTree = "<group>"; };
+		A98D453D2DD08AAF13DF80A2 /* Pods-Hunger Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hunger Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hunger Swift/Pods-Hunger Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		CDA507B4C19F2D91BA3E6341 /* Pods-Hunger SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hunger SwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hunger SwiftTests/Pods-Hunger SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		D54D88E173A6C428781B1B33 /* Pods_Hunger_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hunger_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA01B1A21DA4AADA00326C6B /* Hunger Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hunger Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA01B1A51DA4AADA00326C6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA01B1A71DA4AADA00326C6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +97,7 @@
 		DA3B25F61DF54602007ABBC3 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		DA3B25F81DF5461B007ABBC3 /* DiaryContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryContentViewController.swift; sourceTree = "<group>"; };
 		DA3B25FA1DF54632007ABBC3 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		DC06B8688FABEDBE4C1A6470 /* Pods-Hunger SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hunger SwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hunger SwiftTests/Pods-Hunger SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C67BE444943A14BCC24480A /* Pods_Hunger_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0124C85A7945F515ED813C /* Pods_Hunger_SwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +121,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA82D9600570CF6FFF958F57 /* Pods_Hunger_SwiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33446DE21914CA2D8B585B33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A98D453D2DD08AAF13DF80A2 /* Pods-Hunger Swift.debug.xcconfig */,
+				8D6EB671EF6D856011273F9A /* Pods-Hunger Swift.release.xcconfig */,
+				DC06B8688FABEDBE4C1A6470 /* Pods-Hunger SwiftTests.debug.xcconfig */,
+				CDA507B4C19F2D91BA3E6341 /* Pods-Hunger SwiftTests.release.xcconfig */,
+				59091E1C9960A3CD14F6EB54 /* Pods-Hunger SwiftUITests.debug.xcconfig */,
+				7625CE4006AC248389AB05FE /* Pods-Hunger SwiftUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7347484634C961EE013D790D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EB67C6C1E094FE000B423AB /* libsqlite3.tbd */,
+				5EB67C6A1E094FD500B423AB /* libsqlite3.0.tbd */,
+				5EB67C681E09435800B423AB /* SQLite.framework */,
+				3D863A1FD8A0134BC3C27040 /* Pods_Hunger_Swift.framework */,
+				2962A836284C8D068A9EA265 /* Pods_Hunger_SwiftTests.framework */,
+				D54D88E173A6C428781B1B33 /* Pods_Hunger_SwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA01B1991DA4AADA00326C6B = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +162,8 @@
 				DA01B1BC1DA4AADA00326C6B /* Hunger SwiftTests */,
 				DA01B1C71DA4AADA00326C6B /* Hunger SwiftUITests */,
 				DA01B1A31DA4AADA00326C6B /* Products */,
+				33446DE21914CA2D8B585B33 /* Pods */,
+				7347484634C961EE013D790D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +217,8 @@
 		DA01B1DA1DA4C44000326C6B /* Helper Files */ = {
 			isa = PBXGroup;
 			children = (
+				5EB67C701E095F5B00B423AB /* Diary+CoreDataProperties.swift */,
+				5EB67C711E095F5B00B423AB /* Diary.swift */,
 				DA01B1D81DA4C42D00326C6B /* CommonUtilities.swift */,
 				DA01B1DC1DA4C45100326C6B /* MBProgressHUD.h */,
 				DA01B1DD1DA4C45100326C6B /* MBProgressHUD.m */,
@@ -205,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA01B1CD1DA4AADA00326C6B /* Build configuration list for PBXNativeTarget "Hunger Swift" */;
 			buildPhases = (
+				7763C0ED9FFF266E2B0400CA /* [CP] Check Pods Manifest.lock */,
 				DA01B19E1DA4AADA00326C6B /* Sources */,
 				DA01B19F1DA4AADA00326C6B /* Frameworks */,
 				DA01B1A01DA4AADA00326C6B /* Resources */,
+				523FE6AAFF470DDD3EA9C661 /* [CP] Embed Pods Frameworks */,
+				DD2B8E2A62A4D080B358A7BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,9 +277,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA01B1D01DA4AADA00326C6B /* Build configuration list for PBXNativeTarget "Hunger SwiftTests" */;
 			buildPhases = (
+				79DE1AC42C2D05AFB5983049 /* [CP] Check Pods Manifest.lock */,
 				DA01B1B51DA4AADA00326C6B /* Sources */,
 				DA01B1B61DA4AADA00326C6B /* Frameworks */,
 				DA01B1B71DA4AADA00326C6B /* Resources */,
+				4042700F545A676F94EB18D9 /* [CP] Embed Pods Frameworks */,
+				15608AF07ADCDE282287B8FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA01B1D31DA4AADA00326C6B /* Build configuration list for PBXNativeTarget "Hunger SwiftUITests" */;
 			buildPhases = (
+				EF03558F259CE83DEF4C7C62 /* [CP] Check Pods Manifest.lock */,
 				DA01B1C01DA4AADA00326C6B /* Sources */,
 				DA01B1C11DA4AADA00326C6B /* Frameworks */,
 				DA01B1C21DA4AADA00326C6B /* Resources */,
+				7A1205806FAA13190678015C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,11 +388,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15608AF07ADCDE282287B8FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hunger SwiftTests/Pods-Hunger SwiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4042700F545A676F94EB18D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hunger SwiftTests/Pods-Hunger SwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		523FE6AAFF470DDD3EA9C661 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hunger Swift/Pods-Hunger Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7763C0ED9FFF266E2B0400CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		79DE1AC42C2D05AFB5983049 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A1205806FAA13190678015C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hunger SwiftUITests/Pods-Hunger SwiftUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD2B8E2A62A4D080B358A7BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hunger Swift/Pods-Hunger Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF03558F259CE83DEF4C7C62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA01B19E1DA4AADA00326C6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB67C721E095F5B00B423AB /* Diary+CoreDataProperties.swift in Sources */,
 				DA01B1D71DA4C2C400326C6B /* DateViewController.swift in Sources */,
 				DA3B25F71DF54602007ABBC3 /* ScoreViewController.swift in Sources */,
 				DA01B1E71DA4CCC300326C6B /* DoingViewController.swift in Sources */,
@@ -346,6 +530,7 @@
 				DA01B2261DA56EBB00326C6B /* PhotoViewController.swift in Sources */,
 				DA01B1A61DA4AADA00326C6B /* AppDelegate.swift in Sources */,
 				DA01B1D91DA4C42D00326C6B /* CommonUtilities.swift in Sources */,
+				5EB67C731E095F5B00B423AB /* Diary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +672,7 @@
 		};
 		DA01B1CE1DA4AADA00326C6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A98D453D2DD08AAF13DF80A2 /* Pods-Hunger Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
@@ -494,7 +680,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harloch.Hunger-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/dustin/Desktop/Hunger Swift/Hunger Swift/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Hunger Swift/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -502,6 +688,7 @@
 		};
 		DA01B1CF1DA4AADA00326C6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D6EB671EF6D856011273F9A /* Pods-Hunger Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
@@ -509,13 +696,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harloch.Hunger-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/dustin/Desktop/Hunger Swift/Hunger Swift/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Hunger Swift/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		DA01B1D11DA4AADA00326C6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC06B8688FABEDBE4C1A6470 /* Pods-Hunger SwiftTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Hunger SwiftTests/Info.plist";
@@ -528,6 +716,7 @@
 		};
 		DA01B1D21DA4AADA00326C6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA507B4C19F2D91BA3E6341 /* Pods-Hunger SwiftTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Hunger SwiftTests/Info.plist";
@@ -540,6 +729,7 @@
 		};
 		DA01B1D41DA4AADA00326C6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59091E1C9960A3CD14F6EB54 /* Pods-Hunger SwiftUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Hunger SwiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -551,6 +741,7 @@
 		};
 		DA01B1D51DA4AADA00326C6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7625CE4006AC248389AB05FE /* Pods-Hunger SwiftUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Hunger SwiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

@@ -34,6 +34,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("FeelingViewController") as? FeelingViewController
+        self.navigationController?.pushViewController(next!, animated: true)
+        
         let dateTimeComponents = userCalendar.components(requestedComponents, fromDate: currentDateTime)
         
         let theYear = dateTimeComponents.year

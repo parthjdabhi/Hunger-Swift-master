@@ -39,7 +39,8 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
 
     @IBAction func nextButton(sender: AnyObject) {
-        
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("FeelingViewController") as? FeelingViewController
+        self.navigationController?.pushViewController(next!, animated: true)
     }
     
     @IBAction func noIdeaButton(sender: AnyObject) {

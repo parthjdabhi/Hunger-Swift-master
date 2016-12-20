@@ -1,0 +1,6 @@
+framework module Pods_Hunger_Swift {
+  umbrella header "Pods-Hunger Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

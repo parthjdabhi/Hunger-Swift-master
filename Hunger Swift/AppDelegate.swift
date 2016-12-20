@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import AERecord
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //print("\(db)")
+        
+        print(" test")
+        
+        let record = diaryService.Create(4, date: NSDate(), image: nil, temptScore: "8", estimCalories: 8, youWereAt: "home", youWereSeat: "standing", youWereDoing: "watching tv", hungry: "", thirsty: "", bored: 1, unhappy: 1, eaten: "no")
+        
+        let record2 = diaryService.Create(5, date: NSDate(), image: nil, temptScore: "8", estimCalories: 8, youWereAt: "home", youWereSeat: "standing", youWereDoing: "watching tv", hungry: "", thirsty: "", bored: 1, unhappy: 1, eaten: "no")
+        
+        var diary : [Diary] = diaryService.getAll()
+        
+        for d in diary {
+            print(d.objectID)
+            //diaryService.delete(d.objectID)
+        }
+        
+        // let firstdiary = diaryService.getById(diary[0].objectID)!
+        
+        // firstdiary.name = "Juan Carlos Sanchez"
+        // diaryService.update(firstdiary)
+        
+        // diaryService.delete(firstdiary.objectID)
+        
         return true
     }
 

@@ -28,6 +28,8 @@ class FeelingViewController: UIViewController {
     }
     
     @IBAction func nextButton(sender: AnyObject) {
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreViewController") as! ScoreViewController!
+        self.navigationController?.pushViewController(next, animated: true)
     }
     
     @IBAction func dateButton(sender: AnyObject) {

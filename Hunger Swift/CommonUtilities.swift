@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import SQLite
 
 class CommonUtils: NSObject {
     static let sharedUtils = CommonUtils()
@@ -32,3 +33,14 @@ class CommonUtils: NSObject {
         progressView.hide(true)
     }
 }
+
+
+// Globals
+//
+
+// Create an instance of the service.
+let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+let diaryService = DiaryService(context: context)
+
+
+
