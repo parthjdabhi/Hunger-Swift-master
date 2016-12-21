@@ -657,7 +657,7 @@
                                     <action selector="pictureButton:" destination="jao-7k-j2F" eventType="touchUpInside" id="IKE-cx-acf"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t1y-Ra-AJe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t1y-Ra-AJe">
                                 <rect key="frame" x="66" y="60" width="240" height="187"/>
                             </imageView>
                         </subviews>
@@ -1249,7 +1249,7 @@
         <!--Diary View Controller-->
         <scene sceneID="zTe-n6-Jya">
             <objects>
-                <viewController storyboardIdentifier="DiaryViewController" id="fh3-1G-vxb" customClass="DiaryViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiaryViewController" id="fh3-1G-vxb" customClass="DiaryViewController" customModule="Hunger_Swift" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ttC-fc-9Te"/>
                         <viewControllerLayoutGuide type="bottom" id="Hjm-Sg-nYk"/>
@@ -1271,7 +1271,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryCell" rowHeight="60" id="ffz-gZ-1kn" customClass="DiaryCell">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryCell" rowHeight="60" id="ffz-gZ-1kn" customClass="DiaryCell" customModule="Hunger_Swift">
                                                 <rect key="frame" x="0.0" y="28" width="312" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ffz-gZ-1kn" id="vNh-l5-Mb3">
@@ -1279,13 +1279,13 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcW-K6-Fon">
-                                                            <rect key="frame" x="86" y="8" width="51" height="21"/>
+                                                            <rect key="frame" x="86" y="8" width="226" height="21"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y25-9m-2V4">
-                                                            <rect key="frame" x="86" y="35" width="130" height="21"/>
+                                                            <rect key="frame" x="86" y="35" width="218" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -1298,8 +1298,8 @@
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <connections>
-                                                    <outlet property="dateLabel" destination="Y25-9m-2V4" id="RuJ-hj-JNw"/>
-                                                    <outlet property="foodImageView" destination="PMh-ba-58h" id="q78-zi-AsT"/>
+                                                    <outlet property="dateLabel" destination="KcW-K6-Fon" id="fD2-HC-sha"/>
+                                                    <outlet property="foodImageView" destination="PMh-ba-58h" id="wx5-xK-hyN"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -1315,7 +1315,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_backtostart:" destination="fh3-1G-vxb" eventType="touchUpInside" id="kFS-os-JQ6"/>
+                                            <action selector="clicked_backtostart:" destination="fh3-1G-vxb" eventType="touchUpInside" id="XXC-uY-OhX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1326,9 +1326,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="BJw-8z-z5K"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="diaryListTable" destination="5xG-az-dP7" id="HBa-g5-9Of"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWe-ZF-r05" sceneMemberID="firstResponder"/>
             </objects>
@@ -1337,7 +1334,7 @@
         <!--Landing Page View Controller-->
         <scene sceneID="h4h-Gv-Enl">
             <objects>
-                <viewController storyboardIdentifier="LandingPageViewController" id="sKP-k4-MB0" customClass="LandingPageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LandingPageViewController" id="sKP-k4-MB0" customClass="LandingPageViewController" customModule="Hunger_Swift" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S9O-af-FKg"/>
                         <viewControllerLayoutGuide type="bottom" id="ZBo-dB-Ko0"/>
@@ -1385,8 +1382,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_diarybtn:" destination="sKP-k4-MB0" eventType="touchUpInside" id="Daw-wI-mPr"/>
-                                            <action selector="diaryButton:" destination="sKP-k4-MB0" eventType="touchUpInside" id="NyP-Vj-5Jq"/>
+                                            <action selector="diaryButton:" destination="sKP-k4-MB0" eventType="touchUpInside" id="o2N-SJ-zoY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2W6-mT-r7R">
@@ -1396,8 +1392,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_updateWeightbtn:" destination="sKP-k4-MB0" eventType="touchUpInside" id="crv-Go-nYl"/>
-                                            <action selector="updateMyWeight:" destination="sKP-k4-MB0" eventType="touchUpInside" id="5sd-UX-HFU"/>
+                                            <action selector="updateMyWeight:" destination="sKP-k4-MB0" eventType="touchUpInside" id="F1H-gN-NY8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JH-It-MV2">
@@ -1407,8 +1402,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_temptnextbtn:" destination="sKP-k4-MB0" eventType="touchUpInside" id="h8b-8g-c0L"/>
-                                            <action selector="temptedToEat:" destination="sKP-k4-MB0" eventType="touchUpInside" id="s4f-4P-fMM"/>
+                                            <action selector="temptedToEat:" destination="sKP-k4-MB0" eventType="touchUpInside" id="6Rn-lj-rlH"/>
                                         </connections>
                                     </button>
                                 </subviews>

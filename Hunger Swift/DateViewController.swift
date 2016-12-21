@@ -37,6 +37,9 @@ class DateViewController: UIViewController {
         
         dateLabel.text = currentDate
         getTime()
+        
+        //New Diary
+        newDiary = Diary()
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,7 +47,10 @@ class DateViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func nextButton(sender: AnyObject) {
+    @IBAction func nextButton(sender: AnyObject)
+    {
+        //newDiary?.date =  NSDate().dateByAddingTimeInterval(1000)
+        
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("DoingViewController") as! DoingViewController!
         self.navigationController?.pushViewController(next, animated: true)
         

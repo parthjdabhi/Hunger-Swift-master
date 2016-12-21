@@ -22,11 +22,17 @@ class LandingPageViewController: UIViewController {
     }
     
     @IBAction func diaryButton(sender: AnyObject) {
+        let diaryViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DiaryViewController") as? DiaryViewController
+        self.navigationController?.pushViewController(diaryViewController!, animated: true)
     }
 
     @IBAction func updateMyWeight(sender: AnyObject) {
+        //let signUpViewController = self.storyboard?.instantiateViewControllerWithIdentifier("SignUpViewController") as? SignUpViewController
+        //self.navigationController?.pushViewController(signUpViewController!, animated: true)
     }
 
     @IBAction func temptedToEat(sender: AnyObject) {
+        let dateViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DateViewController") as? DateViewController
+        self.navigationController?.pushViewController(dateViewController!, animated: true)
     }
 }

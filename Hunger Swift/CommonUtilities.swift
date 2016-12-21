@@ -37,10 +37,17 @@ class CommonUtils: NSObject {
 
 // Globals
 //
+let SIGNUP_INFORMATION = "signup_information"
 
 // Create an instance of the service.
 let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 let diaryService = DiaryService(context: context)
+
+var diaryListArray:Array<Diary> = []
+var selectedDiary:Diary?
+var newDiary:Diary?
+
+var signUserInfo:Dictionary<String,AnyObject>?
 
 
 

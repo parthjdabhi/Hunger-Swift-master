@@ -28,18 +28,4 @@ extension Diary {
     @NSManaged var youWereDoing: String?
     @NSManaged var youWereSeat: String?
 
-//    @NSManaged var id: NSNumber?
-//    @NSManaged var date: NSDate?
-//    @NSManaged var image: NSData?
-//    @NSManaged var temptScore: String?
-//    @NSManaged var estimCalories: String?
-//    @NSManaged var youWereAt: String?
-//    @NSManaged var youWereSeat: String?
-//    @NSManaged var youWereDoing: String?
-//    @NSManaged var hungry: String?
-//    @NSManaged var thirsty: String?
-//    @NSManaged var bored: NSNumber?
-//    @NSManaged var unhappy: NSNumber?
-//    @NSManaged var eaten: String?
-    
 }

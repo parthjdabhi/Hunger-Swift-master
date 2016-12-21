@@ -43,6 +43,7 @@ class ViewController: UIViewController {
 
         date1Label.text = currentDate
         date2Label.text = currentDate
+        
     }
 
     override func didReceiveMemoryWarning() {

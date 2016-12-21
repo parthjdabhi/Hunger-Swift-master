@@ -25,6 +25,12 @@ class ScoreViewController: UIViewController {
     }
 
     @IBAction func yesEating(sender: AnyObject) {
+        
+        let savedRecord = diaryService.Create(newDiary!)
+        print(savedRecord)
+        
+        let landingPageView = self.storyboard?.instantiateViewControllerWithIdentifier("LandingPageViewController") as? LandingPageViewController
+        self.navigationController?.pushViewController(landingPageView!, animated: true)
     }
     
     @IBAction func noEating(sender: AnyObject) {
