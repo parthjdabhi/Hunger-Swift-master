@@ -53,7 +53,7 @@ class DoingViewController: UIViewController {
     
     @IBAction func atHomeButton(sender: AnyObject) {
         print(whereArray[0])
-        newDiary?.youWereAt = whereArray[0]
+        diary_where = whereArray[0]
         
         atHomeBool = true
         if atHomeBool == true {
@@ -65,7 +65,7 @@ class DoingViewController: UIViewController {
     }
     @IBAction func outsideButton(sender: AnyObject) {
         print(whereArray[1])
-        newDiary?.youWereAt = whereArray[1]
+        diary_where = whereArray[1]
         
         outsideBool = true
         if outsideBool == true {
@@ -77,7 +77,7 @@ class DoingViewController: UIViewController {
     }
     @IBAction func atShopsButton(sender: AnyObject) {
         print(whereArray[2])
-        newDiary?.youWereAt = whereArray[2]
+        diary_where = whereArray[2]
         
         atShopsBool = true
         if atShopsBool == true {
@@ -89,7 +89,7 @@ class DoingViewController: UIViewController {
     }
     @IBAction func atWorkButton(sender: AnyObject) {
         print(whereArray[3])
-        newDiary?.youWereAt = whereArray[3]
+        diary_where = whereArray[3]
         
         atWorkBool = true
         if atWorkBool == true {
@@ -101,7 +101,7 @@ class DoingViewController: UIViewController {
     }
     @IBAction func watchingTVButton(sender: AnyObject) {
         print(whatArray[0])
-        newDiary?.youWereDoing = whatArray[0]
+        diary_Doing = whatArray[0]
         
         watchingTVBool = true
         if watchingTVBool == true {
@@ -114,7 +114,7 @@ class DoingViewController: UIViewController {
     }
     @IBAction func shoppingButton(sender: AnyObject) {
         print(whatArray[1])
-        newDiary?.youWereDoing = whatArray[1]
+        diary_Doing = whatArray[1]
         
         shoppingBool = true
         if shoppingBool == true {
@@ -127,7 +127,7 @@ class DoingViewController: UIViewController {
     }
     @IBAction func cookingButton(sender: AnyObject) {
         print(whatArray[2])
-        newDiary?.youWereDoing = whatArray[2]
+        diary_Doing = whatArray[2]
         
         cookingBool = true
         if cookingBool == true {
@@ -140,7 +140,7 @@ class DoingViewController: UIViewController {
     }
     @IBAction func workingButton(sender: AnyObject) {
         print(whatArray[3])
-        newDiary?.youWereDoing = whatArray[3]
+        diary_Doing = whatArray[3]
         
         workingBool = true
         if workingBool == true {
@@ -153,7 +153,7 @@ class DoingViewController: UIViewController {
     }
     @IBAction func otherButton(sender: AnyObject) {
         print(whatArray[4])
-        newDiary?.youWereDoing = whatArray[4]
+        diary_Doing = whatArray[4]
         
         otherBool = true
         if otherBool == true {
@@ -166,7 +166,7 @@ class DoingViewController: UIViewController {
     }
     @IBAction func sittingButton(sender: AnyObject) {
         print(areArray[0])
-        newDiary?.youWereAt = areArray[0]
+        diary_AreYou = areArray[0]
         
         sittingBool = true
         if sittingBool == true {
@@ -176,7 +176,7 @@ class DoingViewController: UIViewController {
     }
     @IBAction func standingButton(sender: AnyObject) {
         print(areArray[1])
-        newDiary?.youWereAt = areArray[1]
+        diary_AreYou = areArray[1]
         
         standingBool = true
         if standingBool == true {

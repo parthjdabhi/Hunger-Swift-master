@@ -23,16 +23,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //let record = diaryService.Create("4", date: NSDate(), image: nil, temptScore: "8", estimCalories: "8", youWereAt: "home", youWereSeat: "standing", youWereDoing: "watching tv", hungry: "", thirsty: "", bored: 1, unhappy: 1, eaten: "no")
         //let record2 = diaryService.Create(5, date: NSDate(), image: nil, temptScore: "8", estimCalories: "8", youWereAt: "home", youWereSeat: "standing", youWereDoing: "watching tv", hungry: "", thirsty: "", bored: 1, unhappy: 1, eaten: "no")
         
-        diaryListArray = diaryService.getAll()
-        
-        if diaryListArray.count > 0 {
-            //show listing
-        }
-        
-        for d in diaryListArray {
-            print(d)
-            //diaryService.delete(d.objectID)
-        }
+//        diaryListArray = diaryService.getAll()
+//        
+//        if diaryListArray.count > 0 {
+//            //show listing
+//        }
+//        
+//        for d in diaryListArray {
+//            print(d)
+//            //diaryService.delete(d.objectID)
+//        }
         
         // let firstdiary = diaryService.getById(diary[0].objectID)!
         

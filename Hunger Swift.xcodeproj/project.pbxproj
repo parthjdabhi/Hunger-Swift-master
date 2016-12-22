@@ -186,8 +186,8 @@
 			children = (
 				DA01B1A51DA4AADA00326C6B /* AppDelegate.swift */,
 				DA01B1D61DA4C2C400326C6B /* DateViewController.swift */,
-				DA01B1E61DA4CCC300326C6B /* DoingViewController.swift */,
 				DA01B1A71DA4AADA00326C6B /* ViewController.swift */,
+				DA01B1E61DA4CCC300326C6B /* DoingViewController.swift */,
 				DA01B2251DA56EBB00326C6B /* PhotoViewController.swift */,
 				DA3B25F41DF545F2007ABBC3 /* FeelingViewController.swift */,
 				DA3B25F61DF54602007ABBC3 /* ScoreViewController.swift */,

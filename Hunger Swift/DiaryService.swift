@@ -9,47 +9,60 @@
 import Foundation
 import CoreData
 
+class DiaryObject {
+    
+}
+
 class DiaryService {
     
     var context: NSManagedObjectContext
     
     /*
-     @NSManaged var id: NSNumber?
-     @NSManaged var date: NSDate?
-     @NSManaged var image: NSData?
-     @NSManaged var temptScore: String?
-     @NSManaged var estimCalories: NSNumber?
-     @NSManaged var youWereAt: String?
-     @NSManaged var youWereSeat: String?
-     @NSManaged var youWereDoing: String?
-     @NSManaged var hungry: String?
-     @NSManaged var thirsty: String?
-     @NSManaged var bored: NSNumber?
-     @NSManaged var unhappy: NSNumber?
-     @NSManaged var eaten: String?
+     @NSManaged var diary_Date: String?
+     @NSManaged var diary_Time: String?
+     
+     @NSManaged var diary_where: String?
+     @NSManaged var diary_Doing: String?
+     @NSManaged var diary_AreYou: String?
+     
+     @NSManaged var diary_photo: String?
+     @NSManaged var diary_Calories: String?
+     
+     @NSManaged var feeling_Hungry: String?
+     @NSManaged var feeling_Bored: String?
+     @NSManaged var feeling_Thirsty: String?
+     @NSManaged var feeling_UnHappy: String?
+     
+     @NSManaged var diary_TemptScore: String?
+     @NSManaged var diary_GoingEat: String?
      */
     init(context: NSManagedObjectContext){
         self.context = context
     }
     
     // Creates a new diary
-    func Create(id: String?, date: NSDate?, image: NSData?, temptScore: String?, estimCalories: String?, youWereAt: String?, youWereSeat: String?, youWereDoing: String?, hungry: String?, thirsty: String?, bored: NSNumber?, unhappy: NSNumber?, eaten: String?) -> Diary {
+    func Create(diary_Date: String?, diary_Time: String?, diary_where: String?, diary_Doing: String?, diary_AreYou: String?, diary_photo: NSData?, diary_Calories: String?, feeling_Hungry: String?, feeling_Bored: String?, feeling_Thirsty: String?, feeling_UnHappy: String?, diary_TemptScore: String?, diary_GoingEat: String?) -> Diary {
         
         let newItem = NSEntityDescription.insertNewObjectForEntityForName("Diary", inManagedObjectContext: context) as! Diary
         
-        newItem.id = id
-        newItem.date = date
-        newItem.image = image
-        newItem.temptScore = temptScore
-        newItem.estimCalories = estimCalories
-        newItem.youWereAt = youWereAt
-        newItem.youWereSeat = youWereSeat
-        newItem.youWereDoing = youWereDoing
-        newItem.hungry = hungry
-        newItem.thirsty = thirsty
-        newItem.bored = bored
-        newItem.unhappy = unhappy
-        newItem.eaten = eaten
+        newItem.diary_Date = diary_Date
+        newItem.diary_Time = diary_Time
+        
+        newItem.diary_where = diary_where
+        newItem.diary_Doing = diary_Doing
+        newItem.diary_AreYou = diary_AreYou
+        
+        
+        newItem.diary_TemptScore = diary_TemptScore
+        newItem.diary_Calories = diary_Calories
+        
+        newItem.feeling_Hungry = feeling_Hungry
+        newItem.feeling_Bored = feeling_Bored
+        newItem.feeling_Thirsty = feeling_Thirsty
+        newItem.feeling_UnHappy = feeling_UnHappy
+        
+        newItem.diary_photo = diary_photo
+        newItem.diary_GoingEat = diary_GoingEat
         
         //try? context.save()
         self.saveChanges()
@@ -61,19 +74,25 @@ class DiaryService {
         
         let newItem = NSEntityDescription.insertNewObjectForEntityForName("Diary", inManagedObjectContext: context) as! Diary
         
-        newItem.id = newDiary.id
-        newItem.date = newDiary.date
-        newItem.image = newDiary.image
-        newItem.temptScore = newDiary.temptScore
-        newItem.estimCalories = newDiary.estimCalories
-        newItem.youWereAt = newDiary.youWereAt
-        newItem.youWereSeat = newDiary.youWereSeat
-        newItem.youWereDoing = newDiary.youWereDoing
-        newItem.hungry = newDiary.hungry
-        newItem.thirsty = newDiary.thirsty
-        newItem.bored = newDiary.bored
-        newItem.unhappy = newDiary.unhappy
-        newItem.eaten = newDiary.eaten
+        newItem.diary_Date = newDiary.diary_Date
+        newItem.diary_Date = newDiary.diary_Date
+        newItem.diary_Time = newDiary.diary_Time
+        
+        newItem.feeling_Hungry = newDiary.feeling_Hungry
+        newItem.diary_Doing = newDiary.diary_Doing
+        newItem.diary_AreYou = newDiary.diary_AreYou
+        
+        
+        newItem.diary_TemptScore = newDiary.diary_TemptScore
+        newItem.diary_Calories = newDiary.diary_Calories
+        
+        newItem.feeling_Hungry = newDiary.feeling_Hungry
+        newItem.feeling_Bored = newDiary.feeling_Bored
+        newItem.feeling_Thirsty = newDiary.feeling_Thirsty
+        newItem.feeling_UnHappy = newDiary.feeling_UnHappy
+        
+        newItem.diary_photo = newDiary.diary_photo
+        newItem.diary_GoingEat = newDiary.diary_GoingEat
         
         //try? context.save()
         self.saveChanges()
@@ -113,21 +132,28 @@ class DiaryService {
     
     // Updates a diary
     func update(updatedDiary: Diary) {
-        if let diary = getById(updatedDiary.objectID){
-            diary.id = updatedDiary.id
-            diary.date = updatedDiary.date
-            diary.image = updatedDiary.image
-            diary.temptScore = updatedDiary.temptScore
-            diary.estimCalories = updatedDiary.estimCalories
-            diary.youWereAt = updatedDiary.youWereAt
-            diary.youWereSeat = updatedDiary.youWereSeat
-            diary.youWereDoing = updatedDiary.youWereDoing
-            diary.hungry = updatedDiary.hungry
-            diary.thirsty = updatedDiary.thirsty
-            diary.bored = updatedDiary.bored
-            diary.unhappy = updatedDiary.unhappy
-            diary.eaten = updatedDiary.eaten
-        }
+//        if let diary = getById(updatedDiary.objectID){
+//            
+//            diary_Date = updatedDiary.diary_Date
+//            diary_Time = updatedDiary.diary_Time
+//            
+//            feeling_Hungry = updatedDiary.feeling_Hungry
+//            diary_Doing = updatedDiary.diary_Doing
+//            diary_AreYou = updatedDiary.diary_AreYou
+//            
+//            
+//            diary_TemptScore = updatedDiary.diary_TemptScore
+//            diary_Calories = updatedDiary.diary_Calories
+//            
+//            feeling_Hungry = updatedDiary.feeling_Hungry
+//            feeling_Bored = updatedDiary.feeling_Bored
+//            feeling_Thirsty = updatedDiary.feeling_Thirsty
+//            feeling_UnHappy = updatedDiary.feeling_UnHappy
+//            
+//            diary_photo = updatedDiary.diary_photo
+//            diary_GoingEat = updatedDiary.diary_GoingEat
+//
+//        }
     }
     
     // Deletes a diary

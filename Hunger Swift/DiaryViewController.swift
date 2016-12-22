@@ -14,6 +14,17 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        diaryListArray = diaryService.getAll()
+        
+        if diaryListArray.count > 0 {
+            //show listing
+        }
+        
+        for d in diaryListArray {
+            print(d)
+            //diaryService.delete(d.objectID)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +45,8 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return diaryListArray.count
+        
+        
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -54,11 +67,21 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
 //                var path = NSURL(fileURLWithPath: documentsDirectory).URLByAppendingPathComponent(String = filename).absoluteString
 //                image = UIImage(contentsOfFile: path)!
 //            }
-//            cell.foodImageView.image = image
-            cell?.dateLabel.text = "\((diaryListArray[indexPath.row].date != nil) ? diaryListArray[indexPath.row].date! : "")"
+            cell?.foodImageView.image = (diaryListArray[indexPath.row].diary_photo != nil) ? UIImage(data: diaryListArray[indexPath.row].diary_photo!) : UIImage(named: "no_image_thumb")
+            cell?.dateLabel.text = "\(diaryListArray[indexPath.row].diary_Date ?? "-") \(diaryListArray[indexPath.row].diary_Time ?? " -")"
             cell?.accessoryType = .DisclosureIndicator
         }
         return cell!
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        diary = diaryListArray[indexPath.row]
+        
+        let diaryContentVC = self.storyboard?.instantiateViewControllerWithIdentifier("DiaryContentViewController") as? DiaryContentViewController
+        self.navigationController?.pushViewController(diaryContentVC!, animated: true)
+        
     }
     
     @IBAction func clicked_backtostart(sender: AnyObject) {

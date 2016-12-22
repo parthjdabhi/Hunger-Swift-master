@@ -45,7 +45,25 @@ let diaryService = DiaryService(context: context)
 
 var diaryListArray:Array<Diary> = []
 var selectedDiary:Diary?
-var newDiary:Diary?
+var diary:Diary?
+
+var diary_Date:String?
+var diary_Time:String?
+
+var diary_where:String?
+var diary_Doing:String?
+var diary_AreYou:String?
+
+var diary_photo:NSData?
+var diary_Calories:String?
+
+var feeling_Hungry:String?
+var feeling_Bored:String?
+var feeling_Thirsty:String?
+var feeling_UnHappy:String?
+
+var diary_TemptScore:String?
+var diary_GoingEat:String?
 
 var signUserInfo:Dictionary<String,AnyObject>?
 

@@ -16,11 +16,11 @@ class Diary: NSManagedObject {
 
     override var description : String {
         //return "****  ****\n"
-        return "---- id: \(id), date: \(date), temptScore: \(temptScore ), estimCalories: \(estimCalories), youWereAt: \(youWereAt), youWereSeat: \(youWereSeat ?? "-"), youWereDoing: \(youWereDoing) ----\n"
+        return "---- id: , date: \(diary_Date), temptScore: \(diary_TemptScore ), estimCalories: \(diary_Calories), youWereAt: \(diary_where), youWereSeat: \(diary_AreYou ?? "-"), youWereDoing: \(diary_Doing) ----\n"
     }
     
     override var debugDescription : String {
         //return "---- id: \(id ?? "-"), date: \(date), image: , temptScore: \(temptScore ?? "-"), estimCalories: \(estimCalories ?? "-"), youWereAt: \(youWereAt ?? "-"), youWereSeat: \(youWereSeat ?? "-"), youWereDoing: \(youWereDoing ?? "-"), hungry: \(hungry ?? "-"), thirsty: \(thirsty ?? "-"), bored: \(bored), unhappy: \(unhappy), eaten: \(eaten ?? "-") ----\n"
-        return "---- temptScore: \(temptScore ?? "-") ----\n"
+        return "---- temptScore: \(diary_TemptScore ?? "-") ----\n"
     }
 }

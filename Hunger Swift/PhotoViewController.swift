@@ -39,6 +39,15 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
 //    }
 
     @IBAction func nextButton(sender: AnyObject) {
+        
+        diary_Calories = caloriesField.text ?? ""
+        
+        if(diary_photo == nil){
+            let alertView = UIAlertView(title: "Alert", message: "Please take photo", delegate: nil, cancelButtonTitle: "OK")
+            alertView.show()
+            return
+        }
+        
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("FeelingViewController") as? FeelingViewController
         self.navigationController?.pushViewController(next!, animated: true)
     }
@@ -106,11 +115,11 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let editedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
             food.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-            newDiary?.image = UIImagePNGRepresentation(food.image!)
+            diary_photo = UIImagePNGRepresentation(food.image!)
         }
         else if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             food.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-            newDiary?.image = UIImagePNGRepresentation(food.image!)
+            diary_photo = UIImagePNGRepresentation(food.image!)
         }
         dismissViewControllerAnimated(true, completion: nil)
     }

@@ -36,10 +36,11 @@ class DateViewController: UIViewController {
         currentDate = "\(theMonth)/\(theDay)/\(theYear)"
         
         dateLabel.text = currentDate
+        
+        diary_Date = currentDate
+        
         getTime()
         
-        //New Diary
-        newDiary = Diary()
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,8 +50,6 @@ class DateViewController: UIViewController {
     
     @IBAction func nextButton(sender: AnyObject)
     {
-        //newDiary?.date =  NSDate().dateByAddingTimeInterval(1000)
-        
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("DoingViewController") as! DoingViewController!
         self.navigationController?.pushViewController(next, animated: true)
         
@@ -63,6 +62,8 @@ class DateViewController: UIViewController {
         outputFormat.locale = NSLocale(localeIdentifier:"en_US")
         outputFormat.dateFormat = "hh:mm a"
         timeLabel.text = (outputFormat.stringFromDate(date))
+        
+        diary_Time = (outputFormat.stringFromDate(date))
     }
 
 }

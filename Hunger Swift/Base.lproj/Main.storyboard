@@ -759,7 +759,7 @@
                                     <slider opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="9VM-lq-IHd">
                                         <rect key="frame" x="155" y="237" width="184" height="31"/>
                                         <connections>
-                                            <action selector="thirstySlider:" destination="DZT-bd-Mu3" eventType="valueChanged" id="K0J-1v-M6r"/>
+                                            <action selector="change_value:" destination="DZT-bd-Mu3" eventType="valueChanged" id="OgK-aT-dO0"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thirsty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qe4-4q-e1D">
@@ -774,12 +774,6 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="UYm-iB-NOT">
-                                        <rect key="frame" x="155" y="326" width="184" height="31"/>
-                                        <connections>
-                                            <action selector="boredSlider:" destination="DZT-bd-Mu3" eventType="valueChanged" id="gl6-P9-ktW"/>
-                                        </connections>
-                                    </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bored" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUQ-m4-VLc">
                                         <rect key="frame" x="67" y="326" width="82" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -795,7 +789,7 @@
                                     <slider opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="pHe-DW-v3s">
                                         <rect key="frame" x="155" y="409" width="184" height="31"/>
                                         <connections>
-                                            <action selector="unhappySlider:" destination="DZT-bd-Mu3" eventType="valueChanged" id="DkR-3b-s7h"/>
+                                            <action selector="change_value:" destination="DZT-bd-Mu3" eventType="valueChanged" id="cz1-on-bdC"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unhappy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1Z-qQ-jc9">
@@ -817,7 +811,7 @@
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="lJa-AI-8v1">
                                         <rect key="frame" x="155" y="151" width="184" height="31"/>
                                         <connections>
-                                            <action selector="hungrySlider:" destination="DZT-bd-Mu3" eventType="valueChanged" id="bGT-hC-5cD"/>
+                                            <action selector="change_value:" destination="DZT-bd-Mu3" eventType="valueChanged" id="Tsj-VM-l8X"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3N-VR-otq">
@@ -897,6 +891,12 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <slider opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="UYm-iB-NOT">
+                                        <rect key="frame" x="155" y="326" width="184" height="31"/>
+                                        <connections>
+                                            <action selector="change_value:" destination="DZT-bd-Mu3" eventType="valueChanged" id="vAj-hM-gLT"/>
+                                        </connections>
+                                    </slider>
                                 </subviews>
                                 <color key="backgroundColor" red="0.81296068429946899" green="0.90143716335296631" blue="0.95166712999343872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -907,9 +907,13 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="boredLabel" destination="Ezg-FW-fsD" id="sT9-se-Sn1"/>
+                        <outlet property="boredSilder" destination="UYm-iB-NOT" id="G3b-l4-1iE"/>
                         <outlet property="hungryLabel" destination="Q5O-oW-Qje" id="e2N-0h-WD4"/>
+                        <outlet property="hungrySilder" destination="lJa-AI-8v1" id="0pT-Zk-OTg"/>
                         <outlet property="thirstyLabel" destination="xYl-Ns-aoV" id="jvd-d9-X0C"/>
+                        <outlet property="thirstySilder" destination="9VM-lq-IHd" id="twS-70-M5y"/>
                         <outlet property="unhappyLabel" destination="x0X-g5-JB0" id="8aC-sE-Zje"/>
+                        <outlet property="unhappySilder" destination="pHe-DW-v3s" id="BeX-c8-Gfa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHq-bV-AaU" sceneMemberID="firstResponder"/>
@@ -1056,7 +1060,7 @@
         <!--Diary Content View Controller-->
         <scene sceneID="vhx-2I-ssW">
             <objects>
-                <viewController storyboardIdentifier="DiaryContentViewController" id="Jr2-Li-uHU" customClass="DiaryContentViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiaryContentViewController" id="Jr2-Li-uHU" customClass="DiaryContentViewController" customModule="Hunger_Swift" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eWd-s2-XAj"/>
                         <viewControllerLayoutGuide type="bottom" id="8Nw-YD-ibK"/>
@@ -1206,7 +1210,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clicked_backbtn:" destination="Jr2-Li-uHU" eventType="touchUpInside" id="1UU-8t-Uzv"/>
+                                            <action selector="actionGoToBack:" destination="Jr2-Li-uHU" eventType="touchUpInside" id="BTB-tV-iRx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grk-vH-6Gn">
@@ -1215,9 +1219,6 @@
                                         <state key="normal" title="Email Results">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="onEmailResults:" destination="Jr2-Li-uHU" eventType="touchUpInside" id="JOx-L9-6hA"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.81296068429946899" green="0.90143716335296631" blue="0.95166712999343872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1228,18 +1229,19 @@
                     <navigationItem key="navigationItem" id="QjH-lH-bvB"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="AreyouTxtField" destination="ERN-cb-n6z" id="jou-Is-q8W"/>
-                        <outlet property="caloriesBtn" destination="ACe-Pu-at8" id="bE5-CO-Ml9"/>
-                        <outlet property="dateBtn" destination="L4I-cb-3m1" id="Xe0-W0-MDd"/>
-                        <outlet property="doingTxtField" destination="W2p-uH-Jjd" id="D65-EO-tfL"/>
-                        <outlet property="eatingStatus" destination="bwY-D1-LsV" id="qI1-JU-GAo"/>
-                        <outlet property="feelBoardTxtField" destination="nS5-KT-Nqo" id="8GV-Cs-vyd"/>
-                        <outlet property="feelHungryTxtField" destination="XNX-Kz-UyA" id="Sk2-wi-8pw"/>
-                        <outlet property="feelThirstyTxtField" destination="kva-y1-ELn" id="zox-Dn-DBg"/>
-                        <outlet property="feelUnhappyTxtField" destination="w3X-fl-7X8" id="cov-hz-xfa"/>
-                        <outlet property="temptScore" destination="A1z-95-Scj" id="kD1-24-pcg"/>
-                        <outlet property="timeBtn" destination="wGu-0r-gf2" id="w35-xm-GNl"/>
-                        <outlet property="wheretxtField" destination="J2H-bH-agf" id="fwg-Me-zdW"/>
+                        <outlet property="AreyouTxtField" destination="ERN-cb-n6z" id="xh6-uP-jOx"/>
+                        <outlet property="caloriesBtn" destination="ACe-Pu-at8" id="HXE-Sa-s8a"/>
+                        <outlet property="dateBtn" destination="L4I-cb-3m1" id="ysE-Ag-Vm6"/>
+                        <outlet property="doingTxtField" destination="W2p-uH-Jjd" id="Bnf-ac-1MT"/>
+                        <outlet property="eatingStatus" destination="bwY-D1-LsV" id="lz2-ex-B1h"/>
+                        <outlet property="feelBoardTxtField" destination="nS5-KT-Nqo" id="6Ce-Xk-2hb"/>
+                        <outlet property="feelHungryTxtField" destination="XNX-Kz-UyA" id="D6i-4h-JsZ"/>
+                        <outlet property="feelThirstyTxtField" destination="kva-y1-ELn" id="F10-ZB-0sg"/>
+                        <outlet property="feelUnhappyTxtField" destination="w3X-fl-7X8" id="OEE-CY-D9r"/>
+                        <outlet property="foodPhotoView" destination="TWB-ZW-jNq" id="G7r-R4-8CY"/>
+                        <outlet property="temptScore" destination="A1z-95-Scj" id="nD3-rn-0bX"/>
+                        <outlet property="timeBtn" destination="wGu-0r-gf2" id="hz5-Y3-6Yo"/>
+                        <outlet property="wheretxtField" destination="J2H-bH-agf" id="sJX-8Y-XkS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TU-20-Ah3" sceneMemberID="firstResponder"/>

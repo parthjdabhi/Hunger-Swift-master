@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="16A323" minimumToolsVersion="Automatic">
     <entity name="Diary" representedClassName=".Diary" syncable="YES">
-        <attribute name="bored" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="eaten" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="estimCalories" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="hungry" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="temptScore" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="thirsty" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="unhappy" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="youWereAt" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="youWereDoing" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="youWereSeat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diary_AreYou" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diary_Calories" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diary_Date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diary_Doing" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diary_GoingEat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diary_photo" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="diary_TemptScore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diary_Time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diary_where" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feeling_Bored" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feeling_Hungry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feeling_Thirsty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feeling_UnHappy" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="Diary" positionX="-63" positionY="-18" width="128" height="240"/>
