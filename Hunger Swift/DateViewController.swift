@@ -13,6 +13,12 @@ class DateViewController: UIViewController {
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var timeLabel: UILabel!
     
+    @IBOutlet var btnDate: UIButton!
+    @IBOutlet var btnDoing: UIButton!
+    @IBOutlet var btnPhoto: UIButton!
+    @IBOutlet var btnFeeling: UIButton!
+    @IBOutlet var btnScore: UIButton!
+    
     var currentDate = ""
     let currentDateTime = NSDate()
     let userCalendar = NSCalendar.currentCalendar()
@@ -64,6 +70,21 @@ class DateViewController: UIViewController {
         timeLabel.text = (outputFormat.stringFromDate(date))
         
         diary_Time = (outputFormat.stringFromDate(date))
+    }
+    
+    @IBAction func actionTabButton(sender: UIButton)
+    {
+        if sender == btnDate {
+            self.gotToPageFromClass(DateViewController)
+        } else if sender == btnDoing {
+            self.gotToPageFromClass(DoingViewController)
+        } else if sender == btnPhoto {
+            self.gotToPageFromClass(PhotoViewController)
+        } else if sender == btnFeeling {
+            self.gotToPageFromClass(FeelingViewController)
+        } else if sender == btnScore {
+            self.gotToPageFromClass(ScoreViewController)
+        }
     }
 
 }

@@ -12,7 +12,13 @@ class ScoreViewController: UIViewController {
     
     @IBOutlet var waitLabel: UILabel!
     @IBOutlet var tempationScore: UILabel!
-
+    
+    @IBOutlet var btnDate: UIButton!
+    @IBOutlet var btnDoing: UIButton!
+    @IBOutlet var btnPhoto: UIButton!
+    @IBOutlet var btnFeeling: UIButton!
+    @IBOutlet var btnScore: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,6 +50,21 @@ class ScoreViewController: UIViewController {
     }
     
     @IBAction func feelingButton(sender: AnyObject) {
+    }
+    
+    @IBAction func actionTabButton(sender: UIButton)
+    {
+        if sender == btnDate {
+            self.gotToPageFromClass(DateViewController)
+        } else if sender == btnDoing {
+            self.gotToPageFromClass(DoingViewController)
+        } else if sender == btnPhoto {
+            self.gotToPageFromClass(PhotoViewController)
+        } else if sender == btnFeeling {
+            self.gotToPageFromClass(FeelingViewController)
+        } else if sender == btnScore {
+            self.gotToPageFromClass(ScoreViewController)
+        }
     }
     
     func saveData()

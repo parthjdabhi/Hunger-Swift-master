@@ -69,3 +69,15 @@ var signUserInfo:Dictionary<String,AnyObject>?
 
 
 
+extension UIViewController {
+    func gotToPageFromClass(pageClass:AnyClass) {
+        for viewController in self.navigationController!.viewControllers {
+            if viewController.isKindOfClass(pageClass) {
+                self.navigationController?.popToViewController(viewController, animated: true)
+            }
+        }
+    }
+}
+
+
+

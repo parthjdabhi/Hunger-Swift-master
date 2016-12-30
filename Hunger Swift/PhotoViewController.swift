@@ -14,6 +14,12 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBOutlet var caloriesField: UITextField!
     @IBOutlet var food: UIImageView!
     
+    @IBOutlet var btnDate: UIButton!
+    @IBOutlet var btnDoing: UIButton!
+    @IBOutlet var btnPhoto: UIButton!
+    @IBOutlet var btnFeeling: UIButton!
+    @IBOutlet var btnScore: UIButton!
+    
     var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
@@ -38,6 +44,21 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
 //        presentViewController(imagePicker, animated: true, completion: nil)
 //    }
 
+    @IBAction func actionTabButton(sender: UIButton)
+    {
+        if sender == btnDate {
+            self.gotToPageFromClass(DateViewController)
+        } else if sender == btnDoing {
+            self.gotToPageFromClass(DoingViewController)
+        } else if sender == btnPhoto {
+            self.gotToPageFromClass(PhotoViewController)
+        } else if sender == btnFeeling {
+            self.gotToPageFromClass(FeelingViewController)
+        } else if sender == btnScore {
+            self.gotToPageFromClass(ScoreViewController)
+        }
+    }
+    
     @IBAction func nextButton(sender: AnyObject) {
         
         diary_Calories = caloriesField.text ?? ""
@@ -66,7 +87,6 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         
     
     }
-    
     
     @IBAction func pictureButton(sender: AnyObject) {
         // 1

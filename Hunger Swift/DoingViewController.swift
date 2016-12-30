@@ -41,6 +41,12 @@ class DoingViewController: UIViewController {
     var sittingBool = false
     var standingBool = false
     
+    @IBOutlet var btnDate: UIButton!
+    @IBOutlet var btnDoing: UIButton!
+    @IBOutlet var btnPhoto: UIButton!
+    @IBOutlet var btnFeeling: UIButton!
+    @IBOutlet var btnScore: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -189,5 +195,19 @@ class DoingViewController: UIViewController {
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("PhotoViewController") as! PhotoViewController!
         self.navigationController?.pushViewController(next, animated: true)
     }
-
+    
+    @IBAction func actionTabButton(sender: UIButton)
+    {
+        if sender == btnDate {
+            self.gotToPageFromClass(DateViewController)
+        } else if sender == btnDoing {
+            self.gotToPageFromClass(DoingViewController)
+        } else if sender == btnPhoto {
+            self.gotToPageFromClass(PhotoViewController)
+        } else if sender == btnFeeling {
+            self.gotToPageFromClass(FeelingViewController)
+        } else if sender == btnScore {
+            self.gotToPageFromClass(ScoreViewController)
+        }
+    }
 }

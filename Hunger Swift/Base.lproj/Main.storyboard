@@ -266,6 +266,9 @@
                                 <state key="normal" title="Doing">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionTabButton:" destination="Bpa-Fh-71F" eventType="touchUpInside" id="PI2-nt-OlV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psc-zL-twe">
                                 <rect key="frame" x="157" y="617" width="60" height="30"/>
@@ -274,6 +277,9 @@
                                 <state key="normal" title="Photo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionTabButton:" destination="Bpa-Fh-71F" eventType="touchUpInside" id="yG4-q8-VZn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3m-o7-t2q">
                                 <rect key="frame" x="217" y="617" width="60" height="30"/>
@@ -282,6 +288,9 @@
                                 <state key="normal" title="Feeling">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionTabButton:" destination="Bpa-Fh-71F" eventType="touchUpInside" id="dxp-80-XDm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8a-2H-WoE">
                                 <rect key="frame" x="277" y="617" width="60" height="30"/>
@@ -290,12 +299,20 @@
                                 <state key="normal" title="Score">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionTabButton:" destination="Bpa-Fh-71F" eventType="touchUpInside" id="RAQ-RP-mK5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.81296068429946899" green="0.90143716335296631" blue="0.95166712999343872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="btnDate" destination="lEv-RQ-jVW" id="pJ5-PD-v4i"/>
+                        <outlet property="btnDoing" destination="sc5-5d-oVp" id="maw-lg-uat"/>
+                        <outlet property="btnFeeling" destination="S3m-o7-t2q" id="wB8-GY-3tP"/>
+                        <outlet property="btnPhoto" destination="psc-zL-twe" id="jTj-PJ-7kb"/>
+                        <outlet property="btnScore" destination="z8a-2H-WoE" id="HgD-gd-VbV"/>
                         <outlet property="dateLabel" destination="iRD-BD-Afg" id="yJT-Kw-fQo"/>
                         <outlet property="timeLabel" destination="2L4-CN-vz0" id="aN4-c6-V43"/>
                     </connections>
@@ -341,6 +358,9 @@
                                 <state key="normal" title="Date">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionTabButton:" destination="0GP-tl-pRz" eventType="touchUpInside" id="1bN-6b-J9j"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrb-Jy-Yxa">
                                 <rect key="frame" x="97" y="617" width="60" height="30"/>
@@ -357,6 +377,9 @@
                                 <state key="normal" title="Photo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionTabButton:" destination="0GP-tl-pRz" eventType="touchUpInside" id="Og2-iL-oxu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbO-pk-LWM">
                                 <rect key="frame" x="217" y="617" width="60" height="30"/>
@@ -365,6 +388,9 @@
                                 <state key="normal" title="Feeling">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionTabButton:" destination="0GP-tl-pRz" eventType="touchUpInside" id="3mV-Hl-xKg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i29-3N-GWq">
                                 <rect key="frame" x="277" y="617" width="60" height="30"/>
@@ -373,6 +399,9 @@
                                 <state key="normal" title="Score">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionTabButton:" destination="0GP-tl-pRz" eventType="touchUpInside" id="a7l-Qv-Hm6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="At Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AS7-8x-hDb">
                                 <rect key="frame" x="74" y="78" width="67" height="21"/>
@@ -536,6 +565,11 @@
                         <outlet property="atHome" destination="G8v-ZP-yfo" id="aMY-iY-eSf"/>
                         <outlet property="atShops" destination="HJh-1K-H00" id="eqe-gJ-h2e"/>
                         <outlet property="atWork" destination="zo7-xJ-G2e" id="wMQ-2G-vIy"/>
+                        <outlet property="btnDate" destination="MYs-q6-j8j" id="ZgW-UO-Tix"/>
+                        <outlet property="btnDoing" destination="Jrb-Jy-Yxa" id="0Za-rG-Stt"/>
+                        <outlet property="btnFeeling" destination="vbO-pk-LWM" id="7aS-5r-cpy"/>
+                        <outlet property="btnPhoto" destination="QE8-Ez-Y2R" id="yTn-IL-vqW"/>
+                        <outlet property="btnScore" destination="i29-3N-GWq" id="Is8-N3-aWn"/>
                         <outlet property="cooking" destination="j4z-Gb-f0o" id="RV7-pT-I5d"/>
                         <outlet property="other" destination="NK6-Mr-OyM" id="dxO-R2-pPM"/>
                         <outlet property="outside" destination="zs6-4c-8P4" id="qQk-oB-xBe"/>
@@ -570,6 +604,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="actionTabButton:" destination="jao-7k-j2F" eventType="touchUpInside" id="wWP-1i-pX1"/>
                                     <action selector="dateButton:" destination="jao-7k-j2F" eventType="touchUpInside" id="NgS-w8-DPt"/>
                                 </connections>
                             </button>
@@ -581,6 +616,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="actionTabButton:" destination="jao-7k-j2F" eventType="touchUpInside" id="hwn-Ol-vZO"/>
                                     <action selector="doingButton:" destination="jao-7k-j2F" eventType="touchUpInside" id="x5B-s9-dVZ"/>
                                 </connections>
                             </button>
@@ -599,6 +635,9 @@
                                 <state key="normal" title="Feeling">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionTabButton:" destination="jao-7k-j2F" eventType="touchUpInside" id="veW-YW-v5a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iU-ik-TSU">
                                 <rect key="frame" x="276" y="617" width="60" height="30"/>
@@ -607,6 +646,9 @@
                                 <state key="normal" title="Score">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionTabButton:" destination="jao-7k-j2F" eventType="touchUpInside" id="Ch5-sV-hDW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7r-ZK-r2F">
                                 <rect key="frame" x="256" y="447" width="80" height="30"/>
@@ -665,6 +707,11 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="btnDate" destination="Els-Nt-zUB" id="ctf-dC-dWN"/>
+                        <outlet property="btnDoing" destination="Y5Q-WX-9wF" id="yYF-lR-Nxd"/>
+                        <outlet property="btnFeeling" destination="M8B-4E-MUk" id="bBB-wp-6WH"/>
+                        <outlet property="btnPhoto" destination="5Nc-cc-1D6" id="eYY-DX-0Gj"/>
+                        <outlet property="btnScore" destination="4iU-ik-TSU" id="JmH-aQ-kQf"/>
                         <outlet property="caloriesField" destination="PS8-YS-PF6" id="958-VJ-k43"/>
                         <outlet property="food" destination="t1y-Ra-AJe" id="hBb-7D-iKV"/>
                         <outlet property="noIdea" destination="n02-fv-uSw" id="pst-dl-0sx"/>
@@ -703,6 +750,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="actionTabButton:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="yuq-BP-dkW"/>
                                             <action selector="dateButton:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="YqI-hf-rvb"/>
                                         </connections>
                                     </button>
@@ -714,6 +762,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="actionTabButton:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="LgY-8c-soh"/>
                                             <action selector="doingButton:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="8J8-jb-p4m"/>
                                         </connections>
                                     </button>
@@ -725,6 +774,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="actionTabButton:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="2Bi-6a-Bnh"/>
                                             <action selector="photoButton:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="Ivx-hq-E6O"/>
                                         </connections>
                                     </button>
@@ -743,6 +793,9 @@
                                         <state key="normal" title="Score">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionTabButton:" destination="DZT-bd-Mu3" eventType="touchUpInside" id="HzB-3R-bUz"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hungry" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttm-fw-DWY">
                                         <rect key="frame" x="67" y="151" width="82" height="27"/>
@@ -908,6 +961,11 @@
                     <connections>
                         <outlet property="boredLabel" destination="Ezg-FW-fsD" id="sT9-se-Sn1"/>
                         <outlet property="boredSilder" destination="UYm-iB-NOT" id="G3b-l4-1iE"/>
+                        <outlet property="btnDate" destination="0w9-ix-3LF" id="FQN-zt-9H7"/>
+                        <outlet property="btnDoing" destination="jYT-xM-CyN" id="Hjh-x4-hOy"/>
+                        <outlet property="btnFeeling" destination="b40-HA-Vd4" id="xL0-vc-Ihv"/>
+                        <outlet property="btnPhoto" destination="4UI-8W-DhF" id="Wid-WT-XD4"/>
+                        <outlet property="btnScore" destination="UtL-As-Yeo" id="dhZ-Tw-0bi"/>
                         <outlet property="hungryLabel" destination="Q5O-oW-Qje" id="e2N-0h-WD4"/>
                         <outlet property="hungrySilder" destination="lJa-AI-8v1" id="0pT-Zk-OTg"/>
                         <outlet property="thirstyLabel" destination="xYl-Ns-aoV" id="jvd-d9-X0C"/>
@@ -943,6 +1001,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="actionTabButton:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="WcU-S4-AwM"/>
                                             <action selector="dateButton:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="MW8-NY-rhz"/>
                                         </connections>
                                     </button>
@@ -954,6 +1013,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="actionTabButton:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="qeD-zq-oVU"/>
                                             <action selector="doingButton:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="6CJ-tj-Ode"/>
                                         </connections>
                                     </button>
@@ -965,6 +1025,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="actionTabButton:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="g0b-RI-cJN"/>
                                             <action selector="photoButton:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="ihN-WD-dTW"/>
                                         </connections>
                                     </button>
@@ -976,6 +1037,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="actionTabButton:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="3rt-pF-XH0"/>
                                             <action selector="feelingButton:" destination="Dhu-Nh-I2N" eventType="touchUpInside" id="Ogm-d4-ntg"/>
                                         </connections>
                                     </button>
@@ -1049,6 +1111,11 @@
                     <navigationItem key="navigationItem" id="aO6-DU-WgC"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="btnDate" destination="PMu-sY-slb" id="bAA-s5-Xsk"/>
+                        <outlet property="btnDoing" destination="uB9-Va-29c" id="A6c-Md-oc0"/>
+                        <outlet property="btnFeeling" destination="xHf-SQ-0gd" id="tLF-2c-Ff4"/>
+                        <outlet property="btnPhoto" destination="nUM-SU-Ed8" id="T26-TJ-x76"/>
+                        <outlet property="btnScore" destination="N4t-nx-rK9" id="PXt-hj-Chm"/>
                         <outlet property="tempationScore" destination="bim-ab-bAD" id="VYi-kB-6Ol"/>
                         <outlet property="waitLabel" destination="cBB-7m-w9X" id="nGr-2G-kGl"/>
                     </connections>
